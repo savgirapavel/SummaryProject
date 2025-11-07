@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 vLLM Political Lean Analysis Script with Reasoning
-Usage: python vLLM_Political_Lean_Analysis.py
+Usage: x.py
 """
 
 import os
@@ -25,9 +25,9 @@ from vllm import LLM, SamplingParams
 
 MODEL_NAME = "Qwen/Qwen3-4B-Instruct-2507"
 
-INPUT_CSV = "/home/coalas/SummaryProject/Data/two_summaries.csv"
-OUTPUT_JSON = "/home/coalas/SummaryProject/Data/two_summaries_political_lean_results.json"
-OUTPUT_CSV = "/home/coalas/SummaryProject/Data/two_summaries_with_lean.csv"
+INPUT_CSV = "x"
+OUTPUT_JSON = "x"
+OUTPUT_CSV = "x"
 
 MAX_MODEL_LEN = 30000
 TENSOR_PARALLEL_SIZE = 1
@@ -47,7 +47,7 @@ os.environ["HF_HUB_OFFLINE"] = "0"
 os.environ["TRANSFORMERS_OFFLINE"] = "0"
 
 if "HF_HOME" not in os.environ:
-    os.environ["HF_HOME"] = "/home/coalas/SummaryProject/.cache/huggingface"
+    os.environ["HF_HOME"] = "x"
     print(f"Set HF_HOME to: {os.environ['HF_HOME']}")
 
 # ============================================================================
